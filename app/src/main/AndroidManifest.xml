@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.atoballesterosbaluyangravidez.studybuddy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/studybuddy_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/studybuddy_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudyBuddy"
+        tools:targetApi="31">
+
+        <activity android:name=".StartupPage" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SignInPage" />
+        <activity android:name=".SignUpPage" />
+        <activity android:name=".TypeOfProfessional" />
+        <activity android:name=".SessionType" />
+        <activity android:name=".Location" />
+        <activity android:name=".Budget" />
+        <activity android:name=".ProgressBar" />
+        <activity android:name=".ListOfProfessionals" />
+        <activity android:name=".Professional" />
+        <activity android:name=".BookAnAppointment" />
+
+        <activity android:name=".EmailVerificationHandler"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="studybuddy" android:host="callback" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

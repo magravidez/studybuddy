@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#83BDFF</color>
+    <color name="colorSecondary">#99D3F9</color>
+
+    <color name="colorBoldText">#202020</color>
+    <color name="colorText">#828282</color>
+
+    <color name="colorCheck">#00BA00</color>
+
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorCard">#FAFAFA</color>
+
+    <color name="purple_200">#85CDFD</color>
+    <color name="purple_700">#83BDFF</color>
+    <color name="black">#000000</color>
+    <color name="teal_200">#85CDFD</color>
+</resources>
